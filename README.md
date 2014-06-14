@@ -3,7 +3,7 @@ squid
 
 Run squid as a caching proxy in a docker container:
 
-    docker run -d -p 3128:3128 neilellis/squid
+    docker run -d -p 3128:3128 orangeacme/squid
 
 And then time a few http requests through the proxy with something like:
 
