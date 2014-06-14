@@ -1,3 +1,2 @@
-#!/usr/bin/env bash
-cd $(dirname $0)
-docker build -t poklet/squid .
+#!/bin/bash
+sudo docker build -t orangeacme/squid .
