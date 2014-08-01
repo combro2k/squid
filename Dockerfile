@@ -10,4 +10,4 @@ RUN /usr/sbin/squid3 -N -z -F
 
 EXPOSE 3128
 
-CMD sleep 2m && /usr/sbin/squid3 -N -d 0
+CMD echo 'Timeout 2m to allow pipework' && sleep 2m && /usr/sbin/squid3 -N -d 0
