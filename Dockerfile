@@ -10,4 +10,4 @@ RUN /usr/sbin/squid3 -N -z -F
 
 EXPOSE 3128
 
-CMD /usr/sbin/squid3 -N -d 0
+CMD sleep 2m && /usr/sbin/squid3 -N -d 0
