@@ -1,5 +1,5 @@
 FROM ubuntu:14.04
-MAINTAINER acme@astray.com
+MAINTAINER docker@vmaurik.nl
 
 RUN apt-get update && apt-get clean
 RUN apt-get install -y squid3 && apt-get clean
@@ -10,4 +10,4 @@ RUN /usr/sbin/squid3 -N -z -F
 
 EXPOSE 3128
 
-CMD echo 'Timeout 2m to allow pipework' && sleep 2m && /usr/sbin/squid3 -N -d 0
+CMD ["/usr/sbin/squid3", "-N", "-d", "0"]
