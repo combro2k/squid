@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo docker build -t orangeacme/squid .
+sudo docker build -t combro2k/squid .
